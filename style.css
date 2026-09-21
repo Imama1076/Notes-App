@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   font-family:Arial, Helvetica, sans-serif
+}
+:root{
+    --bgcolor: #002147;
+    --bgcolor2: rgb(255, 255, 255);
+    --border:2px solid #F2F3F4;
+}
+body{
+   background-color:#F5F5F5;  
+}
+.myheading{
+    margin-top: 100px;
+    margin-left: 50px;
+}
+.nav-container{
+    background-color: var(--bgcolor);
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container1{
+    width: 100vw;
+    overflow-x: hidden;
+    padding-bottom: 80px;
+    min-height: 533px;
+    background-color: var(--bgcolor2);
+    box-shadow: 2px 3px 36px rgb(228 228 228);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   align-items: center;
+   justify-content:flex-start;
+}
+#nav-heading{
+  display: inline;
+  color: white;   
+  position: relative;
+  bottom: 23px;
+}
+.save,.delete{
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    border:var(--border);
+    padding: 7px;
+    position: relative;
+    left: 7rem;
+    bottom: 5px;
+    margin-left: 5px;
+}
+#search-btn:hover,.save:hover,.delete:hover,#back-btn:hover{
+ background-color: var(--bgcolor);
+    color: white;
+    border: none;
+}
+.create-notes{
+    box-shadow: 2px 3px 36px rgb(228 228 228);
+    min-height: 401px;
+    width: 323px;
+    position: relative;
+    top: 49px;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+.input-note,.input-title{
+    width:18rem;
+    margin-bottom: 20px;
+    margin-top: 1rem;
+    margin-right: 5rem;
+    margin-left: 1rem;
+    font-size: 14px;
+    padding-left: 10px;
+   padding-top: 20px;
+}
+.input-note{
+    height: 9rem;
+}
+.input-title{
+    height: 4rem;
+}
+#search-input{
+    height: 2rem;
+    width: 17em;
+    padding-left: 10px;
+}
+#search-btn{
+    height: 2.70em;
+    width: 40px;
+    position: relative;
+    top: -1px;
+    /* right: 7px; */
+    padding: 7px;
+    border: var(--border);
+    border-radius: 2px;
+    left: 16px;
+}
+.search{
+    position: relative;
+    top: 76px;
+    display: flex;
+    justify-content: center;
+
+}
+.add:read-only{
+    background-color: #bfef95;
+
+}
+#show_date_time{
+    margin-left: 78px;
+}
+#back-btn{
+    height: 40px;
+    width: 39px;
+    position: relative;
+    left: 4em;
+    top: 109px;
+
+}
+.error-msg-styling{
+ color: red;
+ position: relative;
+    left: 29px;
+    top: -17px;
+}
+.show-successful-result{
+    color: red;
+    position:relative;
+    top: 46px;
+    left: 136px;
+
+}

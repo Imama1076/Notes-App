@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes Creater</title>
+    <link rel="icon" href="noteLogo.png" type="image/png" >
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav-container">
+       <span class="logo-img">
+            <img src="noteLogo.png" alt="note logo" height="70px" width="90px">
+            <h1 id="nav-heading">Notes Creater </h1>  
+       </span>
+    </div>
+     <h1 class="myheading">Notes</h1>
+         <button id="back-btn">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
+</svg>
+        </button>
+          <div class="search">
+            <input type="text" name="search" id="search-input"placeholder="Search for">
+            <button id="search-btn" title="search">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                </svg>
+            </button>
+        </div>
+        <div class="show-successful-result">
+    </div>
+    <div class="container1">  
+    <div class="main-container" >
+     <div class="create-notes">
+        <div class="note-title">
+          <textarea name="input-note" placeholder="Enter Title"class="input-title" maxlength="35"></textarea>
+        </div>
+        <span id="show_date_time"></span>
+       <div class="note-txt">
+       <textarea name="input-note" placeholder="Enter Note"class="input-note"></textarea>
+       </div>
+      <button class="save" title="Save">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+      <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+      </svg> </button>
+    <button class="delete" title="Cancel"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+     <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+     </svg>
+     </button>
+           
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
